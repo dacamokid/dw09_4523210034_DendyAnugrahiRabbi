@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktikum Tailwind CSS - Grid Layout dan Dark Mode</title>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-black text-gray-800 dark:text-gray-200 font-sans">
+    <header class="bg-emerald-500 text-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Galeri Foto</h1>
+          <button id="dark-mode-toggle" class="btn toggle-dark-mode">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-4">Selamat Datang di Galeri Kami</h2>
+          <p class="text-lg mb-8">Koleksi foto Keajaiban Dunia</p>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-orange-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/09/09/7-keajaiban-kunojpg-20220909014350.jpg" alt="Foto 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Great Pyramid of Giza</h3>
+              <p class="text-gray-600 dark:text-gray-400">Tahukah teman-teman? Piramida Agung Giza ini merupakan keajaiban dunia kuno tertua dan satu-satunya yang masih berdiri hingga saat ini, lo. 
+
+                Piramida ini dibangun sekitar tahun 2000 sebelum masehi dengan tujuan sebagai makam bagi firaun Mesir kuno, Khufu.
+                
+                Bangunan Piramida Agung ini diyakini memakan waktu 20 tahun dan sebanyak 100.000 pekerja untuk menyelesaikannya. .</p>
+            </div>
+          </div>
+          <!-- Tambahkan Card 2, 3, dst. dengan struktur yang sama -->
+          <!-- Card 2 -->
+          <div class="bg-orange-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://cdn.britannica.com/89/179589-138-3EE27C94/Overview-Great-Wall-of-China.jpg?w=800&h=450&c=crop" alt="Foto 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">the great wall of china</h3>
+              <p class="text-gray-600 dark:text-gray-400">The Great Wall of China atau Tembok Besar China (ada juga yang menyebutnya Tembok Raksasa China) adalah sebuah Tembok besar yang dibangun untuk menghubungkan benteng-benteng pertahanan dengan tujuan untuk  melindungi wilayah China dari penyerangan suku Mongol. Tembok Besar China yang dibangun mulai tahun 722 SM di Zaman Musim Semi Gugur hingga Dinasti Ming pada Tahun 1655 ini merupakan bangunan terbesar sepanjang sejarah peradaban manusia yang membentang di atas gurun, pengunungan dan dataran bagaikan seekor Naga Raksasa. .</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-orange-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2021/11/03/petra-wowjpg-20211103091659.jpg" alt="Foto 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Petra, Yordania</h3>
+              <p class="text-gray-600 dark:text-gray-400">Petra adalah sebuah kota yang didirikan dengan ukiran dinding-dinding pada tebing berbatu di Yordania. Kata Petra berasal dari bahasa Yunani yang artinya adalah Batu. Petra merupakan ibukota kerajaan Nabatean yang dibangun oleh Raja Aretas IV pada tahun 9 SM hingga tahun 40 Masehi. Situs ini ditemukan oleh penggelana Swiss yang bernama Johann Ludwig Burckhardt pada tahun 1812. Petra Yordania ini ditetapkan sebagai Warisan Dunia oleh UNESCO pada tanggal 6 Desember 1985. Petra Yordania merupakan simbol dari Teknik dan Perlindungan.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-orange-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://cdn.britannica.com/02/179502-138-AE3BE74C/effects-construction-Rome-Colosseum.jpg?w=800&h=450&c=crop" alt="Foto 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Roman Colosseum, Roma Italia</h3>
+              <p class="text-gray-600 dark:text-gray-400">Roman Colosseum merupakan sebuah bangunan yang diperuntukkan sebagai tempat penyelenggaran pertunjukan yang spektakuler seperti pertarungan antara binatang, pertarungan antara tahanan dan binatang serta pertarungan gladiator.  Situs Colosseum yang berada di Kota Roma Italia ini dibangun oleh Kaisar Vespasian pada masa Domitianus pada tahun 72 Masehi dan diselesaikan oleh anaknya yang bernama Titus pada tahun 80 Masehi. Colosseum yang berbentuk elips ini juga disebut dengan Flavian Amphitheatre. UNESCO menetapkan Colosseum sebagai Situs Warisan Dunia pada tahun 1980..</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-orange-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://images.squarespace-cdn.com/content/v1/56e36f751d07c0743d1e142f/1471717857809-QOV2TD59V3REGBK88FWF/Art+Deco+Statue+-+Christ+the+Redeemer%2C+Rio+de+Janeiro%2C+Brazil" alt="Foto 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Christ the Redeemer, Rio de Janeiro Brasil</h3>
+              <p class="text-gray-600 dark:text-gray-400">Christ the Redeemer atau Patung Kristus Penebus adalah sebuah Patung Yesus yang berada di atas gunung Corcovado Kota Rio de Janeiro, Brasil. Patung Yesus ini memiliki ketinggian sekitar 38 meter dan memerlukan 5 tahun untuk menyelesaikannya.  Patung Christ the Redeemer atau Patung Kristus Penebus ini diresmikan pada tanggal 12 Oktober 1931 dan merupakan salah satu dari 5 monumen terbaik di dunia ini. Tangan Patung yang terbuka sebagai tanda kehangatan penduduk Brasil dalam menerima para pendatang ataupun wisatawan..</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="bg-orange-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://asset.kompas.com/crops/C2ejfEMAEvWQFp1B8gMYUdNandQ=/0x0:500x333/1200x800/data/photo/2019/12/21/5dfdac80c1158.jpg" alt="Foto 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2"> Machu Picchu, Peru</h3>
+              <p class="text-gray-600 dark:text-gray-400">Machu Picchu adalah reruntuhan Inka yang terletak di wilayah lembah penggunungan Urubamba, Peru.   Machu Picchu merupakan sebuah kota yang dibangun pada tahun 1450 oleh kerajaan Inka , tetapi ditinggalkan seratus tahun kemudian ketika Kerajaan Inka ditaklukan oleh bangsa Spanyol. Istilah Machu Picchu jika diterjemahkan langsung ke bahasa Indonesia dapat diartikan menjadi “Gunung Tua”. Situs ini kemudian ditemukan kembali oleh arkeolog Hiram Bingham dari Universitas Yale pada tahun 1911. Machu Pichu termasuk salah satu situs warisan dunia UNESCO pada tahun 1983.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-emerald-500 text-black p-4 mt-10">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 Galeri Foto. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script>
+        const toggleDarkMode = document.getElementById('dark-mode-toggle');
+        const htmlElement = document.documentElement;
+      
+        toggleDarkMode.addEventListener('click', () => {
+          htmlElement.classList.toggle('dark');
+        });
+      </script>
+</body>
+</html>
